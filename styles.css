@@ -115,6 +115,11 @@ h3 {
   color: rgba(35, 49, 41, 0.72);
 }
 
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--forest);
+}
+
 .hero,
 .section,
 .hero-card,
@@ -156,6 +161,15 @@ h3 {
 .hero-card {
   padding: 2rem;
   background: linear-gradient(180deg, rgba(213, 239, 229, 0.82), rgba(255, 252, 247, 0.94));
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(24, 53, 42, 0.08);
+  background: rgba(255, 255, 255, 0.52);
 }
 
 .eyebrow,
@@ -214,6 +228,14 @@ h3 {
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 2rem;
+}
+
+.quick-points {
+  display: grid;
+  gap: 0.45rem;
+  margin: 1.35rem 0 0;
+  padding-left: 1.15rem;
+  color: rgba(35, 49, 41, 0.8);
 }
 
 .button {
@@ -300,6 +322,10 @@ h3 {
   padding: 1.45rem;
 }
 
+.accent-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(236, 248, 241, 0.88));
+}
+
 .split .cards {
   margin-top: 1rem;
 }
@@ -329,6 +355,61 @@ h3 {
   gap: 0.8rem;
 }
 
+.service-area-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 1rem;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-card img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+}
+
+.plain-list {
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+  color: rgba(35, 49, 41, 0.8);
+  line-height: 1.7;
+}
+
+.testimonial-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quote-card {
+  padding: 1.3rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.quote-card p {
+  margin-bottom: 0.8rem;
+}
+
+.quote-card span {
+  color: var(--sage);
+  font-size: 0.92rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
 .contact-links a {
   padding: 1rem 1.1rem;
   border: 1px solid var(--line);
@@ -353,7 +434,10 @@ h3 {
   .cards-three,
   .cards-two,
   .steps,
-  .contact-panel {
+  .contact-panel,
+  .service-area-layout,
+  .testimonial-strip,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
